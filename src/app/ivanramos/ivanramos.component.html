@@ -40,6 +40,26 @@
         <router-outlet></router-outlet>
 
     </div>
+    <table class="table table-bordered">
+        <tr>
+            <th>
+                titulo
+            </th>
+            <th>
+                body
+            </th>
+        </tr>
+        <tr *ngFor="let item of posts">
+            <td>
+                {{item.title}
+            </td>
+            <td>
+                {{item.body}}
+            </td>
+
+        </tr>
+
+    </table>
   </main>
   <footer>
     copyRight Iván Ramos 2023
